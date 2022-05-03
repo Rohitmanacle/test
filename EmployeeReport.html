@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightblue">
+    <center>
+        <h1>Daily Performance Report</h1>
+        <table border="2px" cellpadding="2" background-color="white"> 
+            <tr>
+            <th>State</th>
+            <th>Area</th>
+            <th>Head Quater</th>
+            <th>Town/City</th>
+            <th>User</th>
+            <th>Distributor</th>
+            <th>Role</th>
+            <th>Date Range Picker</th>
+            </tr>
+
+
+
+            <tr>
+                <td><input type="text"  id="state"></td>
+                <td><input type="text"  id="area"></td>
+                <td><input type="text"  id="headquater"></td>
+                <td><input type="text"  id="town"></td>
+                <td><input type="text"  id="user"></td>
+                <td><input type="text"  id="distributor"></td>
+                <td><input type="text"  id="role"></td>
+                <td><input type="date"  id="datarange"></td>
+            </tr>
+
+            <tr>
+                <th colspan="5" height="30">
+                <input type="submit" value="add performance" onclick="sub()"></th>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="5" bgcolor="white"
+		height="100" width="500" cellpadding="5" id="TableScore">
+		<caption><b>Performance Data</b></caption>
+		<tr>
+			<th width="180">State</th>
+			<th>Area</th>
+			<th>Head Quater</th>
+			<th>Town/City</th>
+			<th>User</th>
+			<th>Distributor</th>
+			<th>Role</th>
+			<th>Date</th>
+		</tr>
+	   </table>
+    </center>
+
+    <script type="text/javascript">
+        var  s,a,h,t,u,d,r,d,r,d;
+        s = (document.getElementById('state')).value;
+        a = (document.getElementById('area')).value;
+        h = (document.getElementById('headquater')).value;
+        t = (document.getElementById('town')).value;
+        u = (document.getElementById('user')).value;
+        d = (document.getElementById('distributor')).value;
+        r = (document.getElementById('role')).value;
+        d = (document.getElementById('date')).value;
+    </script>
+</body>
+</html>

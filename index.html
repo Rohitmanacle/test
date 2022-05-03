@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset class="form-group">
+        <select class="form-control" id="language_selection" name="language_selection[]" multiple>
+            <option value="de">Deutschland</option>
+            <option value="pt">Portugal</option>
+            <option value="en">England</option>
+            <option value="es">Espana</option>
+        </select>
+        </fieldset>
+        <div id="divFileInput"></div>        
+    <script>
+        $('#language_selection').change(function(){
+    var selections = $("#language_selection :selected");
+    var html = '';
+    $.each(selections,function(i,item){
+        html += $(item).text()+':<input type="file" id="'+$(item).val()+'" /><br>';
+    })
+    $('#divFileInput').html(html);
+})
+    </script>
+</body>
+</html>
